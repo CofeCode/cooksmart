@@ -1,0 +1,12 @@
+.pageContainerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageContainerContainer .titleH1 {
+  border-bottom: 1px solid;
+  display: inline-block;
+  text-align: center;
+}

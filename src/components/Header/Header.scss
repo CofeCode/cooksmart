@@ -1,0 +1,33 @@
+.headerContainer {
+  background: url("../../assets/salad.jpg");
+  background-size: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .headerContainer {
+    height: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .headerContainer {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerContainer {
+    height: 200px;
+  }
+}
+
+@media (max-width: 550px) {
+  .headerContainer {
+    background-image: none;
+    height: 0vh;
+  }
+}

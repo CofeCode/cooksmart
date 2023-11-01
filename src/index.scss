@@ -1,0 +1,89 @@
+// variables.scss
+$main-color: #ffffff;
+$main-color-text: #232323;
+$main-color-border: #cccccc;
+$main-color-h: #f3af3d;
+$main-color-success: #5ac561;
+$main-color-hover: #ea742c;
+$main-color-logo: #6ccb8f;
+
+body {
+  background-color: $main-color;
+}
+
+a {
+  color: $main-color;
+  text-decoration: none;
+}
+
+p,
+h3,
+h4,
+h5,
+h6,
+.title {
+  color: $main-color-text;
+  text-decoration: none;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  color: $main-color-h;
+  border-bottom: 0.5px solid $main-color-border;
+  display: inline-block;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri";
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  color: $main-color-text;
+}
+
+.title {
+  text-align: center;
+}
+
+.insideContainer {
+  h3 {
+    font-size: 1.5rem;
+  }
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/*Buttons*/
+.icon {
+  vertical-align: middle;
+  font-size: 1.1rem;
+}
+.iconClear {
+  font-size: 2rem;
+}
+
+.buttonAddDelete {
+  background-color: transparent;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    color: $main-color-hover;
+  }
+}
+.iconDone {
+  color: $main-color-success;
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .insideContainer {
+    font-size: 1.1rem;
+  }
+}

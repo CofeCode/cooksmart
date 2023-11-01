@@ -1,0 +1,32 @@
+@import "../../index.scss";
+
+.recipeCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recipeCardsImageContainer {
+  border-radius: 10px;
+  padding: 1%;
+  margin: 1.5%;
+  max-width: 300px;
+  justify-content: center;
+  font-size: 1.2rem;
+  .title {
+    font-weight: 600;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+  &:hover {
+    background-color: #f7f7f7;
+  }
+}
+
+.recipeCardsContainer img {
+  width: 100%;
+  height: auto;
+  border: 0.5px solid $main-color-border;
+  border-radius: 5px;
+}

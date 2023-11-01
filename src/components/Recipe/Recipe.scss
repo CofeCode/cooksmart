@@ -1,0 +1,95 @@
+@import "../../index.scss";
+
+.imagePictureCookTimeCaloriesContainer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  img {
+    width: 40%;
+    height: auto;
+    border: 0.5px solid $main-color-border;
+    border-radius: 10px;
+    margin: 1%;
+  }
+
+  .propsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+  }
+
+  h3 {
+    margin: 0;
+    border-bottom: 0.5px solid $main-color-border;
+  }
+
+  .props {
+    flex: 1;
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+    border: 0.5px solid $main-color-border;
+    border-radius: 5px;
+  }
+}
+
+.ingredient {
+  display: flex;
+  align-items: center;
+}
+
+.steps {
+  padding-bottom: 5%;
+
+  .step {
+    padding: 1%;
+    display: flex;
+    align-items: center;
+
+    &.completed {
+      text-decoration: line-through;
+    }
+
+    .stepNumber {
+      margin-right: 1em;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .imagePictureCookTimeCaloriesContainer {
+    font-size: 1rem; 
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .imagePictureCookTimeCaloriesContainer {
+    flex-direction: column; 
+    align-items: center; 
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    img {
+      width: 60%;
+    }
+
+    .propsContainer {
+      flex-direction: row; 
+      justify-content: center; 
+      padding: 0;
+      margin-top: 1rem; 
+      .props {
+        margin: 0 0.5rem; 
+      }
+    }
+  }
+}
